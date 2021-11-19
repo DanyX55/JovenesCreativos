@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.4 ease all;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  gap: 0.5rem;
+  background: rgb(255,179,132);
+  background: linear-gradient(345deg, rgba(255,179,132,1) 13%, rgba(224,132,75,1) 63%, rgba(233,106,28,1) 100%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navbar__buttons {
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+  border: 1px;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.18s ease-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  overflow: hidden;
+}
+
+a:hover, a:focus {
+  background-color: #fff;
+  color: #333;
+}
+
+.perfil{
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: 5px;
+  border-color: black;
+  width: 15rem;
+  height: 15rem;
+}
+
+.divperfil{
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  background: rgb(233,106,28);
+  background: linear-gradient(90deg, rgba(233,106,28,1) 0%, rgba(242,164,115,1) 50%, rgba(233,106,28,1) 100%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+header, main{
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+
+body{
+  min-width: 300px;
+  transition: 0.4s;
+  background-color: #f1f1f1;
+}
+
+.dark{
+  transition: 0.3s;
+  background-color: #111;
+}
+
+li{
+  text-align: center;
+  list-style: none;
+  border-color: rgba(129, 52, 25, 0.377);
+  border:10px;
+}
+.navbar__switch::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px; 
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px 20px rgba(170,170,170, 0.2);
+}
+.navbar__switch{
+  background-color: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.navbar__switch span{
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+}
+.navbar__switch--active{
+  background-color: orange;
+}
+.navbar__switch--active::after{
+  left: 0;
+  right: unset;
+}
+body.dark.navbar{
+  background-color: #222;
+  color: #fff;
+}
+li i{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.video{
+  margin: 3%;
+  max-width: 85%;
+}
