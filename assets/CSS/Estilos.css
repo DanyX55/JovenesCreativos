@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.4 ease all;
+  transition: 1 ease all;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -15,6 +15,7 @@
   background: linear-gradient(345deg, rgba(255,179,132,1) 13%, rgba(224,132,75,1) 63%, rgba(233,106,28,1) 100%);
   padding: 10px;
   border-radius: 10px;
+  width: 100%;
 }
 
 .navbar__buttons {
@@ -35,17 +36,27 @@ a:hover, a:focus {
   color: #333;
 }
 
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+
 .perfil{
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin: 5px;
   border-color: black;
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
 }
+.divmayor{
 
+
+}
 .divperfil{
   width: 100%;
+  margin: 1%;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -64,14 +75,25 @@ header, main{
 
 body{
   min-width: 300px;
-  transition: 0.4s;
-  background-color: #f1f1f1;
+  transition: 1s ease-in-out;
+  background-color:rgba(256, 256, 256, 0.5);
+  
+  
 }
 
 .dark{
-  transition: 0.3s;
-  background-color: #111;
+  min-width: 300px;
+  transition: 1s ease-in-out;
+  background-color:rgba(0, 0, 0, 0.5);
+
 }
+
+.fade{
+  background:
+  repeating-linear-gradient( -45deg, rgba(256, 256, 256, 0.3), #333 1px, rgba(256, 256, 256, 0.3) 1px);
+}
+
+
 
 li{
   text-align: center;
