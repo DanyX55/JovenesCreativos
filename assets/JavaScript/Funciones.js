@@ -6,15 +6,24 @@ btnSwitch.addEventListener("click", () => {
 }
 )
 
+function myFunction() {
+    var x = document.getElementById("komedy");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
 var img = new Image();
 
 
 img.src = './assets/Images/original.jpg';
 var CanvasXSize = 800;
 var CanvasYSize = 400;
-var speed = 25; 
+var speed = 25;
 var scale = 1.05;
-var y = -4.5; 
+var y = -4.5;
 
 var dx = 0.75;
 var imgW;
@@ -48,7 +57,7 @@ img.onload = function () {
 }
 
 function draw() {
-    ctx.clearRect(0, 0, clearX, clearY); 
+    ctx.clearRect(0, 0, clearX, clearY);
 
     if (imgW <= CanvasXSize) {
         if (x > CanvasXSize) {
