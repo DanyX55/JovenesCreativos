@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@media screen and (min-width: 730px){
+  .divmayor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-content: space-evenly;
+    width: 100%;
+    justify-items: center;
+  }
+  .divperfil{
+    padding: 5rem;
+  }
+  .divproyecto{
+    padding: 5rem;
+  }
+}
+@media screen and (max-width: 850px){
+  .divproyecto{
+    padding: 1rem;
+  }
+  .divperfil{
+    padding: 1rem;
+  }
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -23,6 +47,7 @@
   background-color: #333;
   color: #fff;
   border: 1px;
+  border-radius: 7px;
   padding: 1%;
   text-align: center;
   text-decoration: none;
@@ -48,15 +73,12 @@ a:hover, a:focus {
   border-color: black;
   width: 10rem;
 }
-.divmayor{
 
-
-}
 .divperfil{
-  width: 100%;
+  width: 98%;
+  height: 95%;
   margin: 1%;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  padding: 7%;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -65,6 +87,42 @@ a:hover, a:focus {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+.divproyecto{
+  width: 100%;
+  margin: 1%;
+  margin-top: 100px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  background: rgb(233,106,28);
+  background: linear-gradient(90deg, rgba(233,106,28,1) 0%, rgba(242,164,115,1) 50%, rgba(233,106,28,1) 100%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.separador{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.anime{
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  border-radius: 15px;
+}
+.anima{
+  
+  display: flex;
+  justify-content: center;
+  width: 110%;
+  left: -4.5%;
+  overflow: visible;
+  position: relative;
+}
+
+
+
+
 header, main{
   width: 90%;
   max-width: 1100px;
@@ -72,26 +130,21 @@ header, main{
   padding-top: 10px;
 }
 
-
 body{
   min-width: 300px;
   transition: 1s ease-in-out;
-  background-color:rgba(256, 256, 256, 0.5);
-  
-  
+  background-color:rgba(256, 256, 256, 1);
+
 }
 
 .dark{
   min-width: 300px;
   transition: 1s ease-in-out;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgb(31, 30, 30);
 
 }
 
-.fade{
-  background:
-  repeating-linear-gradient( -45deg, rgba(256, 256, 256, 0.3), #333 1px, rgba(256, 256, 256, 0.3) 1px);
-}
+
 
 
 
